@@ -13,8 +13,7 @@ import java.util.List;
 public class CollectionAccessibilityService extends AccessibilityService {
     @Override
     public void onAccessibilityEvent(AccessibilityEvent accessibilityEvent) {
-        AccessibilityNodeInfo accessibilityNodeInfo = getRootInActiveWindow();
-        if (accessibilityEvent == null) return;
+        AccessibilityNodeInfo accessibilityNodeInfo = accessibilityEvent.getSource();
         printNodeInfo(accessibilityNodeInfo);
     }
 
