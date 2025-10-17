@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BriScript</string>
+    <string name="accessibility_service_description">监听</string>
+    <string name="accessibility_service_label">Bri代收</string>
+</resources>
